@@ -7,7 +7,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server-->>browser: Status code 302 found; URL redirect
+    server-->>browser: Status code 302 found, URL redirect
     deactivate server
 	
 	Note left of server: Server takes text from payload and generates new note with it
